@@ -1,5 +1,7 @@
 package Server;
 
+import Logic.ChatServices;
+import Logic.ChatServicesImpl;
 import Logic.NewHibernateUtil;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
