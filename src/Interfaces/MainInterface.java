@@ -145,7 +145,7 @@ public class MainInterface extends javax.swing.JFrame {
             .addComponent(typeField)
         );
 
-        sendButton.setBackground(new java.awt.Color(0, 153, 153));
+        sendButton.setBackground(new java.awt.Color(0, 102, 102));
         sendButton.setIcon(new javax.swing.ImageIcon("F:\\Uni Works\\Level 3\\Sem 1\\Advanced Java\\ChatApp\\Resources\\sendicon.png")); // NOI18N
 
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
