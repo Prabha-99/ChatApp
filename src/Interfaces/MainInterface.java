@@ -50,15 +50,15 @@ public class MainInterface extends javax.swing.JFrame {
         leftPanel.setBackground(new java.awt.Color(0, 102, 102));
 
         jButton1.setBackground(new java.awt.Color(0, 153, 153));
-        jButton1.setIcon(new javax.swing.ImageIcon("F:\\Uni Works\\Level 3\\Sem 1\\Advanced Java\\ChatApp\\Resources\\homeicon.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/homeicon.png"))); // NOI18N
         jButton1.setContentAreaFilled(false);
 
         jButton2.setBackground(new java.awt.Color(0, 153, 153));
-        jButton2.setIcon(new javax.swing.ImageIcon("F:\\Uni Works\\Level 3\\Sem 1\\Advanced Java\\ChatApp\\Resources\\chaticon.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/chaticon.png"))); // NOI18N
         jButton2.setContentAreaFilled(false);
 
         jButton3.setBackground(new java.awt.Color(0, 153, 153));
-        jButton3.setIcon(new javax.swing.ImageIcon("F:\\Uni Works\\Level 3\\Sem 1\\Advanced Java\\ChatApp\\Resources\\profileicon.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/profileicon.png"))); // NOI18N
         jButton3.setContentAreaFilled(false);
 
         javax.swing.GroupLayout leftPanelLayout = new javax.swing.GroupLayout(leftPanel);
@@ -145,8 +145,8 @@ public class MainInterface extends javax.swing.JFrame {
             .addComponent(typeField)
         );
 
-        sendButton.setBackground(new java.awt.Color(0, 153, 153));
-        sendButton.setIcon(new javax.swing.ImageIcon("F:\\Uni Works\\Level 3\\Sem 1\\Advanced Java\\ChatApp\\Resources\\sendicon.png")); // NOI18N
+        sendButton.setBackground(new java.awt.Color(0, 102, 102));
+        sendButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/sendicon.png"))); // NOI18N
 
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
