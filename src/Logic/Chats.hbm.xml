@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 23, 2023 3:30:13 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Logic.Chats" table="chats" catalog="chat" optimistic-lock="version">
+        <id name="chatId" type="string">
+            <column name="chatID" length="225" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="rooms" class="Logic.Rooms" fetch="select">
+            <column name="roomID" length="225" />
+        </many-to-one>
+        <many-to-one name="users" class="Logic.Users" fetch="select">
+            <column name="senderID" length="225" />
+        </many-to-one>
+        <property name="content" type="string">
+            <column name="content" length="225" />
+        </property>
+        <property name="chatLink" type="string">
+            <column name="chatLink" length="225" />
+        </property>
+        <property name="startTime" type="time">
+            <column name="startTime" length="8" />
+        </property>
+        <property name="endTime" type="time">
+            <column name="endTime" length="8" />
+        </property>
+    </class>
+</hibernate-mapping>
