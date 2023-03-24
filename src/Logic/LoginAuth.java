@@ -9,38 +9,35 @@ import org.hibernate.SessionFactory;
 
 
 public class LoginAuth {
+    private final SessionFactory sessionFactory;
     
-    private final  SessionFactory sessionFactory;
-    private final LoginForm loginForm;
 
-    public LoginAuth(SessionFactory sessionFactory, LoginForm loginForm) {
+    public LoginAuth(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
-        this.loginForm = loginForm;
+        
     }
 
     
     
-   
-    public synchronized boolean logAuth(){
+    public List<Users> logAuth(){
+        Session session =sessionFactory.openSession();
         
-        Session session=sessionFactory.openSession();
         
-        String email =loginForm.getEmail();
-        String password =loginForm.getPassword();
-           
-            Query query = session.createQuery("from Users where email=:email and password=:password");
-            query.setParameter("email", email);
-            query.setParameter("password", password);
-            List<Users> users = query.list();
-            
-            
-            if (users.size() == 1) {
-                return true;
-            } else {
-                return false;
-            }
-            
+        String email ="jenna@gmail.com";
+        String password ="jenna@123";
+        
+        Query query=session.createQuery("FROM Users where email=:email and password=:password");
+        query.setParameter("email", email);
+        query.setParameter("password", password);
+        List<Users> users=query.list();
+        
+        session.close();
+        return users;
+        
+//        if(users.size() == 1) {
+//                return true;
+//            } else {
+//                return false;
+//            }
     }
-     
-    
 }
