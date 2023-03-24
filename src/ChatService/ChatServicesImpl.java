@@ -1,5 +1,5 @@
 
-package Logic;
+package ChatService;
 
 
 import java.rmi.RemoteException;

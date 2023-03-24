@@ -1,7 +1,7 @@
 
 package Client;
 
-import Logic.ChatServices;
+import ChatService.ChatServices;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;

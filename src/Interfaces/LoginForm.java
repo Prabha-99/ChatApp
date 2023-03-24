@@ -2,7 +2,7 @@
 package Interfaces;
 
 
-import Logic.Users;
+import ChatService.Users;
 import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -109,9 +109,9 @@ public class LoginForm extends javax.swing.JFrame {
                     .addComponent(emailLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(chatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(passwordLabel)
-                    .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(chatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(passwordLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -192,13 +192,21 @@ public class LoginForm extends javax.swing.JFrame {
         Session session =sessionFactory.openSession();//Creating a new Session
         
         Query query=session.createQuery("FROM Users where email=:email and password=:password");
+        Query query2=session.createQuery("SELECT nickName, profileImage FROM Users WHERE email=:email");
         query.setParameter("email", email);
         query.setParameter("password", password);
         List<Users> users=query.list();
+        Object[] currentUser = (Object[]) query2.setParameter("email", email).uniqueResult();
         
         session.close();
         
         if(users.size() == 1) {
+                    
+                 String nickname = (String) currentUser[0];
+//                 byte[] profileImage = (byte[]) currentUser[1];
+            
+                 main.getNicknameLabel().setText(nickname);
+                 
                 main.setVisible(true);
                 dispose();
             } else {
@@ -255,4 +263,17 @@ public class LoginForm extends javax.swing.JFrame {
     private javax.swing.JPasswordField passwordField;
     private javax.swing.JLabel passwordLabel;
     // End of variables declaration//GEN-END:variables
+
+   private Object[] getUserNicknameAndProfileImage(int userID) {
+    Session session = sessionFactory.openSession(); // Creating a new Session
+
+    Query query = session.createQuery("SELECT nickname, profileImage FROM Users WHERE email=:email");
+    query.setParameter("userID", userID);
+    Object[] result = (Object[]) query.uniqueResult();
+
+    session.close();
+
+    return result;
+}
+ 
 }

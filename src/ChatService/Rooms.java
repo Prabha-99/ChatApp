@@ -1,4 +1,4 @@
-package Logic;
+package ChatService;
 // Generated Mar 23, 2023 3:30:13 PM by Hibernate Tools 4.3.1
 
 

@@ -113,9 +113,9 @@
                           <Component id="emailField" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="passwordLabel" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="passwordField" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="passwordLabel" linkSize="2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="loginButton" min="-2" pref="35" max="-2" attributes="0"/>

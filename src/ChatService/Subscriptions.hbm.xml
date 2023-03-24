@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 23, 2023 3:30:13 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="chat" name="ChatService.Subscriptions" optimistic-lock="version" table="subscriptions">
+    <id name="subId" type="string">
+      <column length="225" name="subID"/>
+      <generator class="assigned"/>
+    </id>
+    <many-to-one class="ChatService.Rooms" fetch="select" name="rooms">
+      <column length="225" name="roomID"/>
+    </many-to-one>
+    <many-to-one class="ChatService.Users" fetch="select" name="users">
+      <column length="225" name="userID"/>
+    </many-to-one>
+  </class>
+</hibernate-mapping>
