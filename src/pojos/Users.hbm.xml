@@ -1,44 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated Mar 23, 2023 3:30:13 PM by Hibernate Tools 4.3.1 -->
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 25, 2023 10:14:10 PM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
-  <class catalog="chat" name="pojos.Users" optimistic-lock="version" table="users">
-    <id name="userId" type="string">
-      <column length="225" name="userID"/>
-      <generator class="assigned"/>
-    </id>
-    <property name="userName" type="string">
-      <column length="225" name="userName"/>
-    </property>
-    <property name="email" type="string">
-      <column length="225" name="email"/>
-    </property>
-    <property name="nickName" type="string">
-      <column length="225" name="nickName"/>
-    </property>
-    <property name="password" type="string">
-      <column length="225" name="password"/>
-    </property>
-    <property name="profileImage" type="string">
-      <column length="225" name="profileImage"/>
-    </property>
-    <set fetch="select" inverse="true" lazy="true" name="roomses" table="rooms">
-      <key>
-        <column length="225" name="roomAdminID"/>
-      </key>
-      <one-to-many class="pojos.Rooms"/>
-    </set>
-    <set fetch="select" inverse="true" lazy="true" name="chatses" table="chats">
-      <key>
-        <column length="225" name="senderID"/>
-      </key>
-      <one-to-many class="pojos.Chats"/>
-    </set>
-    <set fetch="select" inverse="true" lazy="true" name="subscriptionses" table="subscriptions">
-      <key>
-        <column length="225" name="userID"/>
-      </key>
-      <one-to-many class="pojos.Subscriptions"/>
-    </set>
-  </class>
+    <class name="pojos.Users" table="users" catalog="wechat" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="100" not-null="true" />
+        </property>
+        <property name="nickname" type="string">
+            <column name="nickname" length="100" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" not-null="true" />
+        </property>
+        <property name="profileImage" type="binary">
+            <column name="profile_image" />
+        </property>
+        <property name="userType" type="string">
+            <column name="user_type" length="10" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="100" not-null="true" />
+        </property>
+    </class>
 </hibernate-mapping>

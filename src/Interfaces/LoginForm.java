@@ -202,37 +202,37 @@ public class LoginForm extends javax.swing.JFrame {
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
       
-        //Getting INputes from Login Form
-        String email=getEmail();
-        String password=getPassword();
-        
-        MainInterface main = new MainInterface();
-        Session session =sessionFactory.openSession();//Creating a new Session
-        
-        Query query=session.createQuery("FROM Users where email=:email and password=:password");
-        Query query2=session.createQuery("SELECT nickName, profileImage FROM Users WHERE email=:email");
-        query.setParameter("email", email);
-        query.setParameter("password", password);
-        List<Users> users=query.list();
-        Object[] currentUser = (Object[]) query2.setParameter("email", email).uniqueResult();
-        
-        session.close();
-        
-        if(users.size() == 1) {
-                    
-                 String nickname = (String) currentUser[0];
-//                 byte[] profileImage = (byte[]) currentUser[1];
-            
-                 main.getNicknameLabel().setText(nickname);
-                 
-                main.setVisible(true);
-                dispose();
-            } else {
-                
-                emailField.setText("");
-                passwordField.setText("");
-                javax.swing.JOptionPane.showMessageDialog(this, "Invalid Credentials.!!! Try Again");
-            }    
+//        //Getting INputes from Login Form
+//        String email=getEmail();
+//        String password=getPassword();
+//        
+//        MainInterface main = new MainInterface();
+//        Session session =sessionFactory.openSession();//Creating a new Session
+//        
+//        Query query=session.createQuery("FROM Users where email=:email and password=:password");
+//        Query query2=session.createQuery("SELECT nickName, profileImage FROM Users WHERE email=:email");
+//        query.setParameter("email", email);
+//        query.setParameter("password", password);
+//        List<Users> users=query.list();
+//        Object[] currentUser = (Object[]) query2.setParameter("email", email).uniqueResult();
+//        
+//        session.close();
+//        
+//        if(users.size() == 1) {
+//                    
+//                 String nickname = (String) currentUser[0];
+////                 byte[] profileImage = (byte[]) currentUser[1];
+//            
+//                 main.getNicknameLabel().setText(nickname);
+//                 
+//                main.setVisible(true);
+//                dispose();
+//            } else {
+//                
+//                emailField.setText("");
+//                passwordField.setText("");
+//                javax.swing.JOptionPane.showMessageDialog(this, "Invalid Credentials.!!! Try Again");
+//            }    
     }//GEN-LAST:event_loginButtonActionPerformed
 
  

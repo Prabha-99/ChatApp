@@ -1,8 +1,7 @@
 package services;
 
 import pojos.ChatClient;
-import interfaces.Message;
-import pojos.Groups;
+import pojos.Message;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -12,7 +11,7 @@ import java.io.ObjectOutputStream;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
-import java.util.Iterator;
+
 
 public class ChatService extends UnicastRemoteObject implements Chat {
 
