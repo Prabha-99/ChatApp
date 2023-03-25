@@ -5,7 +5,7 @@
  */
 package Interfaces;
 
-import controller.Connection;
+import pojos.NewHibernateUtil;
 import dbmanager.DBManager;
 import interfaces.icons.Chat_ball;
 import java.awt.Color;
@@ -50,6 +50,7 @@ import javax.swing.table.DefaultTableModel;
 import static jdk.nashorn.internal.runtime.Debug.id;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import pojos.ChatClient;
 import pojos.Groups;
 import pojos.Users;
 import services.Chat;

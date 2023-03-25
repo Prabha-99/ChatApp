@@ -1,5 +1,5 @@
 
-package UserService;
+package services;
 
 import pojos.Users;
 import java.util.List;
