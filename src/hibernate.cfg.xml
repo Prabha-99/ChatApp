@@ -4,11 +4,10 @@
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/chat?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/wechat?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
-    <mapping resource="Logic/Chats.hbm.xml"/>
-    <mapping resource="Logic/Subscriptions.hbm.xml"/>
-    <mapping resource="Logic/Rooms.hbm.xml"/>
-    <mapping resource="Logic/Users.hbm.xml"/>
+    <mapping resource="pojos/Users.hbm.xml"/>
+    <mapping resource="pojos/Files.hbm.xml"/>
+    <mapping resource="pojos/Groups.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
