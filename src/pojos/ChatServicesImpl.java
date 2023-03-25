@@ -1,5 +1,5 @@
 
-package ChatService;
+package pojos;
 
 
 import java.rmi.RemoteException;

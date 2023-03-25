@@ -1,7 +1,7 @@
 
 package Client;
 
-import ChatService.ChatServices;
+import pojos.ChatServices;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
@@ -9,6 +9,7 @@ import java.rmi.registry.Registry;
 
 
 public class Client {
+    
     private String name;
     private ChatServices chatServices;
 

@@ -2,12 +2,12 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <!-- Generated Mar 23, 2023 3:30:13 PM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
-  <class catalog="chat" name="ChatService.Rooms" optimistic-lock="version" table="rooms">
+  <class catalog="chat" name="pojos.Rooms" optimistic-lock="version" table="rooms">
     <id name="roomId" type="string">
       <column length="225" name="roomID"/>
       <generator class="assigned"/>
     </id>
-    <many-to-one class="ChatService.Users" fetch="select" name="users">
+    <many-to-one class="pojos.Users" fetch="select" name="users">
       <column length="225" name="roomAdminID"/>
     </many-to-one>
     <property name="roomeName" type="string">
@@ -23,13 +23,13 @@
       <key>
         <column length="225" name="roomID"/>
       </key>
-      <one-to-many class="ChatService.Subscriptions"/>
+      <one-to-many class="pojos.Subscriptions"/>
     </set>
     <set fetch="select" inverse="true" lazy="true" name="chatses" table="chats">
       <key>
         <column length="225" name="roomID"/>
       </key>
-      <one-to-many class="ChatService.Chats"/>
+      <one-to-many class="pojos.Chats"/>
     </set>
   </class>
 </hibernate-mapping>

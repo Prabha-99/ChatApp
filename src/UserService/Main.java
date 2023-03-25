@@ -1,7 +1,7 @@
 
 package UserService;
 
-import ChatService.Users;
+import pojos.Users;
 import java.util.List;
 
 
