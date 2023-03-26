@@ -558,13 +558,10 @@ public class AppLayout extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
         textregemail = new javax.swing.JTextField();
-        jLabel29 = new javax.swing.JLabel();
         textregpassword = new javax.swing.JPasswordField();
         disable2 = new javax.swing.JLabel();
         btnreg = new javax.swing.JButton();
-        jLabel30 = new javax.swing.JLabel();
         show2 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         linklog = new javax.swing.JLabel();
@@ -856,10 +853,6 @@ public class AppLayout extends javax.swing.JFrame {
         jLabel26.setText("Profile Image");
         jPanel6.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 350, -1, -1));
 
-        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel27.setText("____________________________________________");
-        jPanel6.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 260, -1, 35));
-
         textregemail.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         textregemail.setForeground(new java.awt.Color(255, 255, 255));
         textregemail.setBorder(null);
@@ -869,11 +862,6 @@ public class AppLayout extends javax.swing.JFrame {
             }
         });
         jPanel6.add(textregemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 240, 30));
-
-        jLabel29.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel29.setText("Password");
-        jPanel6.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 240, -1, -1));
 
         textregpassword.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         textregpassword.setForeground(new java.awt.Color(255, 255, 255));
@@ -912,12 +900,7 @@ public class AppLayout extends javax.swing.JFrame {
                 btnregActionPerformed(evt);
             }
         });
-        jPanel6.add(btnreg, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 430, 160, 50));
-
-        jLabel30.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel30.setText("Username");
-        jPanel6.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 390, -1, -1));
+        jPanel6.add(btnreg, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 440, 160, 50));
 
         show2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         show2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -984,7 +967,7 @@ public class AppLayout extends javax.swing.JFrame {
         text_reg_errors.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         text_reg_errors.setForeground(new java.awt.Color(255, 0, 51));
         text_reg_errors.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel6.add(text_reg_errors, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 440, 270, 20));
+        jPanel6.add(text_reg_errors, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 420, 270, 20));
 
         textregusername.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         textregusername.setForeground(new java.awt.Color(255, 255, 255));
@@ -1259,7 +1242,7 @@ public class AppLayout extends javax.swing.JFrame {
         group_create_text.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         group_create_text.setForeground(new java.awt.Color(255, 0, 51));
         group_create_text.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel8.add(group_create_text, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 270, 20));
+        jPanel8.add(group_create_text, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, 270, 20));
 
         img_profile3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces/icons/user.png"))); // NOI18N
         jPanel8.add(img_profile3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 80, 80));
@@ -1684,7 +1667,7 @@ public class AppLayout extends javax.swing.JFrame {
         update_msg.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         update_msg.setForeground(new java.awt.Color(255, 0, 51));
         update_msg.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel19.add(update_msg, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 370, 270, 20));
+        jPanel19.add(update_msg, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 500, 270, 20));
 
         edit_profile_image.setBackground(new java.awt.Color(255, 255, 255));
         edit_profile_image.setFont(new java.awt.Font("Bookman Old Style", 0, 14)); // NOI18N
@@ -1697,12 +1680,12 @@ public class AppLayout extends javax.swing.JFrame {
                 edit_profile_imageMouseClicked(evt);
             }
         });
-        jPanel19.add(edit_profile_image, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 300, 310));
+        jPanel19.add(edit_profile_image, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 300, 310));
 
         text_reg_errors2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         text_reg_errors2.setForeground(new java.awt.Color(255, 0, 51));
         text_reg_errors2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel19.add(text_reg_errors2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 270, 20));
+        jPanel19.add(text_reg_errors2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 470, 270, 20));
 
         edit_nickname.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         edit_nickname.setForeground(new java.awt.Color(255, 255, 255));
@@ -1825,7 +1808,7 @@ public class AppLayout extends javax.swing.JFrame {
         text_delete.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         text_delete.setForeground(new java.awt.Color(255, 0, 51));
         text_delete.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        user_panel.add(text_delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 470, 270, 20));
+        user_panel.add(text_delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 270, 20));
 
         img_profile6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfaces/icons/user.png"))); // NOI18N
         user_panel.add(img_profile6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 80, 80));
@@ -2755,9 +2738,6 @@ public class AppLayout extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
