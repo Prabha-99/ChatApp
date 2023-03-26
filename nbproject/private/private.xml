@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/G:/ChatApp/ChatApp/src/pojos/NewHibernateUtil.java</file>
+            <file>file:/G:/ChatApp/ChatApp/src/Interfaces/AppLayout.java</file>
+            <file>file:/G:/ChatApp/ChatApp/src/hibernate.reveng.xml</file>
+            <file>file:/G:/ChatApp/ChatApp/src/dbmanager/DBManager.java</file>
+            <file>file:/G:/ChatApp/ChatApp/src/hibernate.cfg.xml</file>
+        </group>
     </open-files>
 </project-private>
