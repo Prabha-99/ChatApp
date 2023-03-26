@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package dbmanager;
 
 import pojos.NewHibernateUtil;
@@ -19,10 +15,7 @@ import pojos.Files;
 import pojos.Groups;
 import pojos.Users;
 
-/**
- *
- * @author Madushan
- */
+
 public class DBManager {
     private static DBManager dbm;
 
@@ -143,7 +136,7 @@ public class DBManager {
     }
       
       
-//      Get Chat Groups 
+//      Getting Chat Groups 
       public List get_chat_groups() {
         Session sess = NewHibernateUtil.getSessionFactory().openSession();
         String sql = "FROM Groups";
@@ -153,7 +146,7 @@ public class DBManager {
         return Group;
     }
       
-      //      Get Chat Groups 
+//      Getting Chat Groups 
       public List get_all_users() {
         Session sess = NewHibernateUtil.getSessionFactory().openSession();
         String sql = "FROM Users";
@@ -255,7 +248,6 @@ public class DBManager {
       
       
       
-//      All Users
           
         public List allUsers() {
         Session sess = NewHibernateUtil.getSessionFactory().openSession();

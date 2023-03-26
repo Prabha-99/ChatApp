@@ -70,7 +70,7 @@ public class ChatService extends UnicastRemoteObject implements Chat {
 
     @Override
     public boolean is_subscribed(int client_id) {
-        //retrive_subs();
+        
       
         boolean subscribed=false;
         for (ChatClient next : subs) {
@@ -84,7 +84,7 @@ public class ChatService extends UnicastRemoteObject implements Chat {
         return subscribed;
     }
         public boolean is_subscribed_client(int client_id) {
-        //retrive_subs();
+        
       
         boolean subscribed=false;
         for (ChatClient next : subs) {
@@ -127,14 +127,7 @@ public class ChatService extends UnicastRemoteObject implements Chat {
         subs.removeIf(n -> (n.getId()==c.getId()));
         
 
-//        try {
-//            FileInputStream filein = new FileInputStream(group_id + "_subscribers.ser");
-//            ObjectInputStream inobj = new ObjectInputStream(filein);
-//            ArrayList<ChatClient> subs_list = (ArrayList<ChatClient>) inobj.readObject();
-//
-//        } catch (Exception e) {
-//
-//        }
+
 
     }
 
