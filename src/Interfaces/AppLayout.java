@@ -1395,7 +1395,7 @@ public class AppLayout extends javax.swing.JFrame {
                 logout2MouseClicked(evt);
             }
         });
-        jPanel14.add(logout2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 490, -1, -1));
+        jPanel14.add(logout2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 480, -1, -1));
 
         javax.swing.GroupLayout list_groups_panelLayout = new javax.swing.GroupLayout(list_groups_panel);
         list_groups_panel.setLayout(list_groups_panelLayout);
@@ -1409,8 +1409,10 @@ public class AppLayout extends javax.swing.JFrame {
         );
         list_groups_panelLayout.setVerticalGroup(
             list_groups_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, 557, Short.MAX_VALUE)
-            .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, 588, Short.MAX_VALUE)
+            .addGroup(list_groups_panelLayout.createSequentialGroup()
+                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, 588, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         chat_panel.setBackground(new java.awt.Color(255, 255, 255));
@@ -1877,7 +1879,7 @@ public class AppLayout extends javax.swing.JFrame {
             .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jLayeredPane1Layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(list_groups_panel, javax.swing.GroupLayout.DEFAULT_SIZE, 1011, Short.MAX_VALUE)
+                    .addComponent(list_groups_panel, javax.swing.GroupLayout.PREFERRED_SIZE, 1011, Short.MAX_VALUE)
                     .addGap(24, 24, 24)))
             .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jLayeredPane1Layout.createSequentialGroup()
@@ -1916,7 +1918,7 @@ public class AppLayout extends javax.swing.JFrame {
             .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jLayeredPane1Layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(list_groups_panel, javax.swing.GroupLayout.DEFAULT_SIZE, 557, Short.MAX_VALUE)
+                    .addComponent(list_groups_panel, javax.swing.GroupLayout.PREFERRED_SIZE, 557, Short.MAX_VALUE)
                     .addGap(52, 52, 52)))
             .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jLayeredPane1Layout.createSequentialGroup()
