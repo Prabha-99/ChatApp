@@ -3,7 +3,7 @@ A simple Java Swing Chat Application using HIbernate and MYSQL
 
 ## The Main Login GUI(Designed Usign Java-Swing)
 
-![MainGUI!](/Project Resources/Interfaces/Login.PNG)
+![MainGUI!](Project Resources/Interfaces/Edit_Profile.PNG)
 
 ## Successfully found the given word "Word" at index '6'.Also the programe give us the exact word count of the given Sentence.
 
