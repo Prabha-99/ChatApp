@@ -1,4 +1,4 @@
-# JChatApp
+# Java RMI Chat Application
 A simple Java RMI(Remote Method Invocation) Chat Application that multiple users can chat in a Chat Group Designed and Developed using java Swing as the main Interface design library , Hibernate as the ORM(Object Relational Mapping) tool and MYSQL as the relational Database.
 
 ## The Main Login GUI(Designed Usign Java-Swing)
@@ -11,11 +11,11 @@ A simple Java RMI(Remote Method Invocation) Chat Application that multiple users
 
 ## Admin Dashboard
 
-![MainGUI!](Admin_dashboard.PNG)
+![MainGUI!](Admin_Dashboard.PNG)
 
 ## User Dashboard
 
-![MainGUI!](User_dashboard.PNG)
+![MainGUI!](User_Dashboard.PNG)
 
 ## Edit Profile Window
 
