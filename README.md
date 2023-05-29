@@ -1,19 +1,33 @@
-# ChatApp
-A simple Java Swing Chat Application using HIbernate and MYSQL
+# JChatApp
+A simple Java RMI(Remote Method Invocation) Chat Application that multiple users can chat in a Chat Group Designed and Developed using java Swing as the main Interface design library , Hibernate as the ORM(Object Relational Mapping) tool and MYSQL as the relational Database.
 
 ## The Main Login GUI(Designed Usign Java-Swing)
 
 ![MainGUI!](Login.PNG)
 
-## Successfully found the given word "Word" at index '6'.Also the programe give us the exact word count of the given Sentence.
+## User Registration Form
 
-![MainGUI!](Success.JPG)
+![MainGUI!](Registration.PNG)
 
-## Giving the error message that "Sorry...the Word you entered doesn't exist in the sentense" when user entered a word that does not exist in the sentence or when user entered a more than one word.
+## Admin Dashboard
 
-![MainGUI!](Unsuccess.JPG)
+![MainGUI!](Admin_dashboard.PNG)
 
-## Requirements
+## User Dashboard
 
-* JDK 8 or Later..
-* Netbeans 10 or Later..
+![MainGUI!](User_dashboard.PNG)
+
+## Edit Profile Window
+
+![MainGUI!](Edit_Profile.PNG)
+
+## Main Chat Interface
+
+![MainGUI!](Chat_Interface.PNG)
+
+## ____Pre Requirements_____
+
+* JDK 8 or Later Installed
+* Netbeans 10 or Later Installed
+* MYSQL installed
+* Hibernate installed
